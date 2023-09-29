@@ -10,6 +10,11 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const bookTitle = "Hitchikers Guide to Galaxy";
+const bookAuthor = "Douglas Adams";
+const bookRating = "10/10";
+const bookSoldCopies = 15000000;
+
 // --^-- write your code here --^--
 
 /*
@@ -26,6 +31,11 @@ Then log all variables to the console again.
 
 // --v-- write your code here --v--
 
+// console.log("Title:", bookTitle);
+// console.log("Author:", bookAuthor);
+// console.log("Rating:", bookRating);
+// console.log("Sales:", bookSoldCopies);
+
 // --^-- write your code here --^--
 
 /*
@@ -37,5 +47,21 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+
+function logBookData() {
+  const bookSoldCopiesRaw = bookSoldCopies;
+  let bookSoldCopiesIncrease = bookSoldCopiesRaw + 1;
+
+  console.log("Title:", bookTitle);
+  console.log("Author:", bookAuthor);
+  console.log("Rating:", bookRating);
+
+  console.log("Sales:", bookSoldCopiesIncrease);
+  bookSoldCopiesIncrease += 1;
+  console.log("Sales:", bookSoldCopiesIncrease);
+}
+
+logBookData();
+logBookData();
 
 // --^-- write your code here --^--
